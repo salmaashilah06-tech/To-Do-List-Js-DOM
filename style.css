@@ -5,16 +5,18 @@
     }
     
     .container {
-        width: 100%;
-        min-height: 100vh;
-        background: linear-gradient(135deg, #c2e0ff, #ffb3d6);
-        padding: 10px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f8caca;
+    background-image: radial-gradient(#ffffff 5px, transparent 5px);
+    background-size: 35px 35px;
+    padding: 10px;
     }
     
     .toDo {
         width: 100%;
-        max-width: 500px;
-        background-color: rgba(255, 255, 255, 0.75);
+        max-width: 475px;
+        background-color: #FFF1F3;
         margin: 100px auto 20px;
         padding: 40px 30px 70px;
         border-radius: 10px;
@@ -23,6 +25,7 @@
     .toDo h1 {
         margin-bottom: 30px;
         font-size: 30px;
+        font-family: 'Fredoka', sans ;
         color: #232323;
         display: flex;
         align-items: center;
@@ -37,7 +40,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: #eaeaea;
+        background-color: #F5DDE3;
         border-radius: 30px;
         padding-left: 10px;
         margin-bottom: 25px;
@@ -56,7 +59,7 @@
         border: none;
         outline: none;
         padding: 10px 20px;
-        background: #7f49d7;
+        background: #5C0019;
         color: #ffffff;
         font-size: 16px;
         cursor: pointer;
@@ -64,7 +67,7 @@
     }
     
     #tombol:hover {
-        background: #d4c2f5;
+        background: #c2e7f5;
         color: #232323;
     }
     
@@ -113,3 +116,56 @@
         background: #ccc;
         color: #fff;
     }
+
+    .stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    font-size: 15px;
+    color: #232323;
+}
+
+.stats span {
+    font-weight: bold;
+    color: #49b8d7;
+}
+
+/* Responsif untuk layar HP */
+@media (max-width: 480px) {
+    .toDo {
+        margin-top: 40px;
+        padding: 30px 20px 50px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.stats span {
+    background: #fad9f1;
+    color: #ea8ce0;
+    padding: 10px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+}
